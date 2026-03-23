@@ -377,6 +377,10 @@ a:focus-visible {
   margin: 0;
 }
 
+.highlights .project-heading-toggle {
+  padding-left: 0.25rem;
+}
+
 .highlights .project-heading-toggle h3 {
   font-family: "Instrument Serif", Georgia, serif;
   font-size: 1.68rem;
@@ -427,7 +431,7 @@ a:focus-visible {
 }
 
 .highlights .project-item:nth-of-type(3) .project-heading-toggle {
-  background: #ff9d0aef;
+  background: #f1950b;
 }
 
 .highlights .project-item:nth-of-type(4) .project-heading-toggle {
@@ -676,7 +680,7 @@ a:focus-visible {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
-    padding-left: 0.75rem;
+    padding-left: 0.25rem;
     padding-right: 0.75rem;
     position: relative;
     overflow: visible;
