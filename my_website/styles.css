@@ -1,7 +1,7 @@
 :root {
   --bg: #252525;
   --text: #ffffff;
-  --muted: rgba(255, 255, 255, 0.72);
+  --muted: #999999c0;
   --line: rgba(255, 255, 255, 0.2);
   --line-soft: rgba(255, 255, 255, 0.12);
   --panel: rgba(255, 255, 255, 0.03);
@@ -116,6 +116,10 @@ h3 {
 p {
   margin: 0 0 1rem;
   color: var(--text);
+}
+
+.body-muted {
+  color: var(--muted);
 }
 
 .intro p {
@@ -378,7 +382,16 @@ a:focus-visible {
 }
 
 .highlights .project-heading-toggle {
-  padding-left: 0.25rem;
+  width: calc(100% + 1.7rem);
+  margin-left: -0.85rem;
+  margin-right: -0.85rem;
+  padding-left: 0.85rem;
+  padding-right: 0.85rem;
+  gap: 0.32rem;
+}
+
+.highlights .project-heading-toggle .toggle-chev {
+  width: 0.72rem;
 }
 
 .highlights .project-heading-toggle h3 {
@@ -680,7 +693,7 @@ a:focus-visible {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
-    padding-left: 0.25rem;
+    padding-left: 0;
     padding-right: 0.75rem;
     position: relative;
     overflow: visible;
