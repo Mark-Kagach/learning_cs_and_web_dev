@@ -673,11 +673,26 @@ a:focus-visible {
   }
 
   .highlights .project-heading-toggle {
-    width: calc(100vw + 2px);
-    margin-left: calc(50% - 50vw - 1px);
-    margin-right: calc(50% - 50vw - 1px);
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+    position: relative;
+    overflow: visible;
+    z-index: 0;
+  }
+
+  .highlights .project-heading-toggle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: calc(50% - 50dvw - 2px);
+    right: calc(50% - 50dvw - 2px);
+    background: inherit;
+    pointer-events: none;
+    z-index: -1;
   }
 
   .mixed .mixed-subheading-toggle {
