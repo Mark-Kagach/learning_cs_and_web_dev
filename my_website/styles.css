@@ -401,6 +401,16 @@ a:focus-visible {
   font-weight: 600;
 }
 
+/* Show divider under preview text only when a highlight is expanded */
+.highlights .project-item > .toggle-content {
+  --toggle-mt: 0.55rem;
+  --toggle-pt: 0.55rem;
+}
+
+.highlights .project-item > .toggle-content.is-open {
+  border-top: 1px dashed var(--line);
+}
+
 .mixed-items {
   display: grid;
   gap: 0;
@@ -433,6 +443,13 @@ a:focus-visible {
   font-size: 1.2rem;
   line-height: 1.2;
   font-weight: 700;
+}
+
+.mixed-pleasures-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 0.6rem;
 }
 
 .highlights .project-item:nth-of-type(1) .project-heading-toggle {
@@ -640,12 +657,7 @@ a:focus-visible {
 }
 
 .section.profile::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-top: 1px dashed var(--line);
+  display: none;
 }
 
 @media (max-width: 600px) {
